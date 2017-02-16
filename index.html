@@ -58,23 +58,3 @@
 {% endblock %}
 
 
-<!--
-block body{}
-    {% if all_albums %}
-        <h3>here all albums</h3>
-        <ul>
-            {% for album in all_albums %}
-                <!-- hardcoded url
-                <li><a href="/music/{{ album.id }}/">{{ album.album_title }}</a></li>
-                instead of above, do the below, for non hard coded url
-                #//
-                <li>
-                    <a href="{% url 'music:detail' album.id %}">{{ album.album_title }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    {% else %}
-        <h3>you don't have any albums</h3>
-    {% endif %}
- endblock{}
--->
