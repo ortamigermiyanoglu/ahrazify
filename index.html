@@ -11,8 +11,7 @@
         </div>
             {% if all_albums %}
                 {% for album in all_albums %}
-                <div class="col-sm-4 col-lg-3">
-                    <!-- IMPORTANT COMMENT: above normally is col-sm-4 col-lg-2. I changed it to 3 -->
+                <div class="col-sm-4 col-lg-2">
                     <div class="thumbnail">
                         <a href="{% url 'music:detail' album.id %}">
                             <img src="{{ album.logo}}" class="img-responsive">
